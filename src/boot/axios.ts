@@ -10,8 +10,8 @@ declare module 'vue' {
   }
 }
 
-const api = axios.create({ baseURL: process.env.VITE_API_BASE_URL });
-console.log('process.env.VITE_API_BASE_URL ', process.env.VITE_API_BASE_URL);
+const api = axios.create({ baseURL: process.env.API_BASE_URL });
+console.log('process.env.API_BASE_URL ', process.env.API_BASE_URL);
 
 export default boot(({ app }) => {
   const authStore = useAuthStore();
